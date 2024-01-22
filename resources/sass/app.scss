@@ -1,0 +1,27 @@
+// Fonts
+@import url("https://fonts.bunny.net/css?family=harmattan:400,700");
+
+// Variables
+@import "variables";
+
+// Set up bootstrap variables overrides
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+input {
+   &:focus {
+      outline: none;
+      box-shadow: none;
+   }
+   text-emphasis-style: none;
+}
+
+.welcome-div {
+   font-family: $font-family-sans-serif;
+   h1 {
+      font-size: 2.5rem;
+   }
+   line-height: $line-height-base;
+   background-color: $corpa-color;
+}
