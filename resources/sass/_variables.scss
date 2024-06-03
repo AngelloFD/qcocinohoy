@@ -1,7 +1,16 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
 // Variables
-$corpa-color: #BC3C3C;
+$corpa-primary: #BC3C3C;
 
 // Typography
 $font-family-sans-serif: 'Harmattan', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
+$custom-colors: (
+   "corpa-primary": $corpa-primary,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
